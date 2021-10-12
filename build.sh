@@ -12,10 +12,10 @@ ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
 #make bootimage -j24
-lunch aosp_tissot-eng
+lunch arrow_tissot-userdebug
 #mka vendorimage
 #ccache -s
-m aex
+m bacon
 #echo "Build Done"
 #cd out/target/product/tissot
 #curl bashupload.com -T boot.img
