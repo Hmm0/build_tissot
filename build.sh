@@ -15,7 +15,7 @@ echo "Starting Cooking"
 lunch ssos_tissot-userdebug
 #mka vendorimage
 #ccache -s
-m bacon
+mka bacon
 #echo "Build Done"
 #cd out/target/product/tissot
 #curl bashupload.com -T boot.img
