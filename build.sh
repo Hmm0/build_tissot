@@ -12,7 +12,7 @@ ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
 #make bootimage -j24
-lunch arrow_tissot-userdebug
+lunch ssos_tissot-userdebug
 #mka vendorimage
 #ccache -s
 m bacon
