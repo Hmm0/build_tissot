@@ -3,7 +3,6 @@
 
 # Cook
 . build/envsetup.sh
-export WITH_GAPPS=true
 #export CCACHE_DIR=/drone/ccache
 #export CCACHE_EXEC=$(which ccache)
 #export USE_CCACHE=1
