@@ -3,6 +3,7 @@
 
 # Cook
 . build/envsetup.sh
+export WITH_GAPPS=true
 #export CCACHE_DIR=/drone/ccache
 #export CCACHE_EXEC=$(which ccache)
 #export USE_CCACHE=1
@@ -12,10 +13,10 @@ ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
 #make bootimage -j24
-lunch ssos_tissot-userdebug
+lunch aosp_tissot-userdebug
 #mka vendorimage
 #ccache -s
-mka bacon
+m aex
 #echo "Build Done"
 #cd out/target/product/tissot
 #curl bashupload.com -T boot.img

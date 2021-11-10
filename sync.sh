@@ -1,10 +1,10 @@
 # Initialize Repos
 echo "Initializing Manifest"
-repo init --depth=1 -u https://github.com/ShapeShiftOS/android_manifest -b android_12
+repo init --depth=1 -u https://github.com/aex-tmp/manifest.git -b 12.x
 
 # Sync source
 repo sync -j24 --prune -c --no-clone-bundle --no-tags || repo sync -j24 --prune -c --no-clone-bundle --no-tags
-git clone https://github.com/Unknownbitch07/android_device_xiaomi_tissot -b twelve device/xiaomi/tissot --depth=1
+git clone https://github.com/Unknownbitch07/android_device_xiaomi_tissot -b 12 device/xiaomi/tissot --depth=1
 git clone https://github.com/Unknownbitch07/android_device_xiaomi_msm8953-common -b twelve device/xiaomi/msm8953-common --depth=1
 git clone https://github.com/glassydan/kernel_xiaomi_tissot -b twelve kernel/xiaomi/msm8953 --depth=1
 git clone https://github.com/Hmm0/vendor_xiaomi_tissot -b tissot vendor/xiaomi/tissot
