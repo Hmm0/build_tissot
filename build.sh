@@ -12,10 +12,10 @@ ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
 #make bootimage -j24
-lunch spark_tissot-userdebug
+lunch xdroid_tissot-userdebug
 #mka vendorimage
 #ccache -s
-mka bacon
+make xd
 #echo "Build Done"
 #cd out/target/product/tissot
 #curl bashupload.com -T boot.img
