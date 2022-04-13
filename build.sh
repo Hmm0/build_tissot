@@ -7,8 +7,8 @@ ccache -M 20G
 ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
-lunch palladium_tissot-userdebug
-mka palladium
+lunch aosp_tissot-userdebug
+m bacon
 #echo "Build Done"
 #cd out/target/product/tissot
 #curl bashupload.com -T boot.img
