@@ -7,10 +7,10 @@ ccache -M 20G
 ccache -o compression=true
 ccache -z
 echo "Starting Cooking"
-lunch spark_sunfish-userdebug
-export ALLOW_MISSING_DEPENDENCIES=true
-export BUILD_BROKEN_USES_BUILD_COPY_HEADERS=true
-export BUILD_BROKEN_DUP_RULES=true
+lunch lineage_sunfish-userdebug
+#export ALLOW_MISSING_DEPENDENCIES=true
+#export BUILD_BROKEN_USES_BUILD_COPY_HEADERS=true
+#export BUILD_BROKEN_DUP_RULES=true
 mka bacon
 #echo "Build Done"
 #cd out/target/product/tissot
