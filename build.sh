@@ -9,7 +9,7 @@ ccache -z
 echo "Starting Cooking"
 lunch xdroid_sunfish-userdebug
 #export SELINUX_IGNORE_NEVERALLOWS=true
-#export ALLOW_MISSING_DEPENDENCIES=true
+export ALLOW_MISSING_DEPENDENCIES=true
 #export BUILD_BROKEN_USES_BUILD_COPY_HEADERS=true
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 make xd
